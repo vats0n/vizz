@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<script src="/static/magic.js"></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+/>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb NYC Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="header-bubble">
+      <header class="dashboard-header">
+        <div class="header-left">
+          <img src="/static/images/logo.png" alt="Airbnb Logo" class="logo" />
+          <h1>Airbnb NYC Dashboard</h1>
+        </div>
+        <div class="header-right">
+          <p>Visualization Project Group 51</p>
+        </div>
+      </header>
+    </div>
+    <div class="dashboard-container">
+      <div class="card" id="attribute-list">
+        <h2>Attributes</h2>
+        <ul id="attribute-list-ul">
+          <!-- Add more attributes here -->
+        </ul>
+      </div>
+
+      <div class="card" id="chart-1">
+        <h2>Histogram/ Bar Graph</h2>
+        <!-- Chart 1 will go here -->
+        <div id="histogram"></div>
+      </div>
+
+      <div class="card" id="chart-2">
+        <h2>Chloropleth</h2>
+        <!-- Chart 2 will go here -->
+        <div id="chart-2"></div>
+      </div>
+      <div class="card" id="pie-chart">
+        <h2>Pie Chart</h2>
+        <!-- Pie Chart will go here -->
+        <div id="pie-chart"></div>
+      </div>
+
+      <div class="card" id="pcp-chart">
+        <h2>Parallel Coordinates Plot (PCP)</h2>
+        <!-- PCP will go here -->
+        <div id="pcp-chart"></div>
+      </div>
+    </div>
+  </body>
+</html>

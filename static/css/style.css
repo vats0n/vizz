@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.header-bubble {
+  background-color: #fff;
+  border-radius: 20px; /* This gives the bubble effect with rounded corners */
+  margin: 20px auto; /* Centers the bubble in the page */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 1800px; /* Maximum width of the bubble, you can adjust this */
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px; /* Apply rounded corners to the header */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Adjust size as needed */
+  margin-right: 15px;
+}
+
+.dashboard-header h1 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.header-right p {
+  font-size: 1em;
+  color: #666;
+  text-align: right;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+#attribute-list {
+  width: 10%;
+  /* Adjust height as necessary */
+
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 400px;
+}
+
+#attribute-list ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#attribute-list li {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 2px; /* Adds a little space between list items */
+  background-color: #fff; /* Default background */
+  border-radius: 8px;
+}
+
+#attribute-list li:hover {
+  background-color: #defede; /* Highlight color on hover and active */
+}
+
+#attribute-list li.highlighted {
+  background-color: greenyellow;
+}
+
+#chart-1,
+#chart-2 {
+  width: 40%;
+  /* Adjust height as necessary */
+  max-height: 400px;
+}
+
+/* Styles for the second row of charts */
+#pie-chart {
+  width: 33%;
+  /* Adjust height as necessary */
+  overflow: visible;
+}
+
+#pcp-chart {
+  width: 66%;
+  /* Adjust height as necessary */
+  max-height: 500px;
+}
