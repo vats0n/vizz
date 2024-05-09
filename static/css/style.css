@@ -69,7 +69,7 @@ html {
   /* Adjust height as necessary */
 
   overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 400px;
+  max-height: 300px;
 }
 
 #attribute-list ul {
@@ -87,29 +87,50 @@ html {
 }
 
 #attribute-list li:hover {
-  background-color: #defede; /* Highlight color on hover and active */
+  background-color: rgb(
+    183,
+    216,
+    227
+  ); /* Highlight color on hover and active */
 }
 
 #attribute-list li.highlighted {
-  background-color: greenyellow;
+  background-color: rgb(65, 185, 225);
 }
 
-#chart-1,
-#chart-2 {
-  width: 40%;
+#map {
+  width: 50%;
+  /* Adjust height as necessary */
+  max-height: 500px;
+}
+
+#chart-1 {
+  width: 30%;
   /* Adjust height as necessary */
   max-height: 400px;
 }
-
 /* Styles for the second row of charts */
-#pie-chart {
-  width: 33%;
+#pie-chartt {
+  width: 35%;
   /* Adjust height as necessary */
   overflow: visible;
+  max-height: 480px;
+  height: 480px;
 }
 
 #pcp-chart {
-  width: 66%;
+  width: 50%;
+  /* Adjust height as necessary */
+  max-height: 500px;
+}
+
+#bubble-chart {
+  width: 30%;
+  /* Adjust height as necessary */
+  max-height: 500px;
+}
+#mds-chart {
+  width: 20%;
   /* Adjust height as necessary */
   max-height: 500px;
 }

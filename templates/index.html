@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 <script src="/static/magic.js"></script>
@@ -16,6 +16,19 @@
     <link rel="stylesheet" href="/static/css/style.css" />
   </head>
   <body>
+    <div
+      id="tooltip"
+      style="
+        position: absolute;
+        display: none;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        pointer-events: none;
+      "
+    ></div>
+
     <div class="header-bubble">
       <header class="dashboard-header">
         <div class="header-left">
@@ -34,28 +47,36 @@
           <!-- Add more attributes here -->
         </ul>
       </div>
-
-      <div class="card" id="chart-1">
-        <h2>Histogram/ Bar Graph</h2>
-        <!-- Chart 1 will go here -->
-        <div id="histogram"></div>
-      </div>
-
-      <div class="card" id="chart-2">
-        <h2>Chloropleth</h2>
-        <!-- Chart 2 will go here -->
-        <div id="chart-2"></div>
-      </div>
-      <div class="card" id="pie-chart">
-        <h2>Pie Chart</h2>
+      <div class="card" id="pie-chartt">
+        <h2>Pie Chart / Violin Plot</h2>
         <!-- Pie Chart will go here -->
         <div id="pie-chart"></div>
+      </div>
+      <!-- 
+      <div class="card" id="chart-1">
+        <h2>Histogram/ Bar Graph</h2>
+        <div id="histogram"></div>
+      </div> -->
+      <div class="card" id="bubble-chart">
+        <h2>Bubble Chart</h2>
+        <!-- Bubs will go here -->
+        <div id="bubs"></div>
+      </div>
+      <div class="card" id="mds-chart">
+        <h2>MDS Chart</h2>
+        <!-- Bubs will go here -->
+        <div id="mds-container"></div>
       </div>
 
       <div class="card" id="pcp-chart">
         <h2>Parallel Coordinates Plot (PCP)</h2>
         <!-- PCP will go here -->
         <div id="pcp-chart"></div>
+      </div>
+      <div class="card" id="mapp">
+        <h2>Chloropeth</h2>
+        <!-- Chart 2 will go here -->
+        <div id="map"></div>
       </div>
     </div>
   </body>
